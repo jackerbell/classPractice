@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width:1200px;
+  height:700px;
+  background-color:black;
+}
+
+header {
+  width: 1200px;
+  height:100px;
+  background-color:red;
+}
+
+header > #logo {
+  width : 200px;
+  height : 100px;
+  background-color:rebeccapurple;
+  float: left;
+}
+
+header > #menu {
+  width : 1000px;
+  height : 100px;
+  background-color:cadetblue;
+  float: left;
+}
+
+#slide {
+  width: 1200px;
+  height: 300px;
+  background-color:blue;
+}
+
+#contents {
+  width:1200px;
+  height: 200px;
+  background-color:green;
+}
+
+#contents > #notice {
+  width: 400px;
+  height: 200px;
+  background-color:blueviolet;
+  float:left;
+}
+
+#contents > #gallery {
+  width: 400px;
+  height: 200px;
+  background-color:violet;
+  float:left;
+}
+
+#contents > #shortcut {
+  width: 400px;
+  height: 200px;
+  background-color:crimson;
+  float:left;
+}
+
+footer {
+  width:1200px;
+  height:100px;
+  background-color:yellow;
+}
+
+footer > #menu-copyright {
+  width: 1000px;
+  height: 100px;
+  float: left;
+}
+
+#menu-copyright > #menu {
+  width: 1000px;
+  height: 50px;
+  background-color:darkcyan;
+}
+
+#menu-copyright > #copyright {
+  width: 1000px;
+  height: 50px;
+  background-color:darkgoldenrod;
+}
+
+footer > #familysite {
+  width: 200px;
+  height: 100px;
+  background-color:darkgreen;
+  float: left;
+}

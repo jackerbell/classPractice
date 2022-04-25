@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main{
+  width:1200px;
+  height:700px;
+  background-color:black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  width:1200px;
+  height:100px;
+  background-color:aqua;
+}
+
+header > #logo {
+  width:200px;
+  height:100px;
+  background-color:brown;
+  float:left;
+}
+
+header > #menu {
+  width:1000px;
+  height:100px;
+  background-color:burlywood;
+  float:left;
+}
+
+#slide{
+  width:1200px;
+  height:300px;
+  background-color:blueviolet
+}
+
+#contents{
+  width:1200px;
+  height:200px;
+  background-color:beige;
+}
+
+#contents > #notice-gallery {
+  width:400px;
+  height:200px;
+  background-color:chocolate;
+  float:left;
+}
+
+#contents > #banner {
+  width:400px;
+  height:200px;
+  background-color:coral;
+  float:left;
+}
+
+#contents > #shortcut {
+  width: 400px;
+  height: 200px;
+  background-color:cornflowerblue;
+  float:left;
+}
+
+footer{
+  width:1200px;
+  height:100px;
+  background-color:chartreuse
+}
+
+footer > #logo {
+  width:200px;
+  height:100px;
+  background-color:darkblue;
+  float:left;
+}
+
+footer > #menu {
+  width:1000px;
+  height:50px;
+  background-color:darkcyan;
+  float:left;
+}
+
+footer > #copyright {
+  width:1000px;
+  height:50px;
+  background-color:darkgoldenrod;
+  float:left;
+}
+

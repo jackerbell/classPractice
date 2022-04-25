@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main{
+  width: 1000px;
+  height: 650px;
+  background-color:black;
+}
+
+header {
+  width: 200px;
+  height:650px;
+  background-color:bisque;
+  float: left;
+}
+
+header > #logo {
+  width: 200px;
+  height:50px;
+  background-color:blueviolet;
+  float: left;
+}
+
+header > #menu {
+  width: 200px;
+  height: 600px;
+  background-color:chartreuse;
+  float: left;
+}
+
+#slide{
+  width: 800px;
+  height: 350px;
+  background-color:chocolate;
+  float: left;
+}
+
+#contents{
+  width: 800px;
+  height: 200px;
+  background-color:coral;
+  float: left;
+}
+
+#contents > #notice-gallery {
+  width: 400px;
+  height: 200px;
+  background-color:darkblue;
+  float: left;
+}
+
+#contents > #banner {
+  width: 200px;
+  height: 200px;
+  background-color:darkcyan;
+  float: left;
+}
+
+#contents > #shortcut {
+  width: 200px;
+  height: 200px;
+  background-color:darkgray;
+  float: left;
+}
+
+footer {
+  width: 800px;
+  height: 100px;
+  background-color:darkgreen;
+  float: left;
+}
+
+footer > #logo {
+  width: 200px;
+  height: 100px;
+  background-color:darkgoldenrod;
+  float: left;
+}
+
+footer > #menu-copyright {
+  width: 600px;
+  height:100px;
+  float: left;
+}
+
+#menu-copyright > #menu {
+  width: 600px;
+  height: 50px;
+  background-color:firebrick;
+}
+
+#menu-copyright > #copyright {
+  width: 600px;
+  height: 50px;
+  background-color:fuchsia;
+}
+
