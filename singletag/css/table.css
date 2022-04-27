@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#first-table{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  width:480px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+caption {
+  text-align: center;
+}
+
+table,tr,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-weight: bold;
+  text-align: center;
+}
+
+#table {
+  border: 1px solid black;
+  width:480px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horizontal-item > td {
+  background-color: bisque;
+}
+
+.vertical-item {
+  background-color:bisque;
+}
+
+p {
+  margin-top:3px;
+  text-align: center;
+}
