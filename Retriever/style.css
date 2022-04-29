@@ -31,7 +31,7 @@ a {
 
 #header>h1{
     display: inline; /* htag의 display속성이 블록이므로, inline을 주어 가로정렬*/
-    margin-right: 230px;
+    margin-right: 230px; /*더보기 오른쪽으로 밀어넣기 위해 삽입*/
     font-size: 20px;
     margin-left: 10px;
 }
