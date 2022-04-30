@@ -39,32 +39,57 @@ header > #menu {
   position: relative;
 }
 
-#menu > nav {
+/*
+  메뉴박스 전체
+  위치 조정 menu box를 기준으로 위로 69% 좌로 50%만큼 떨어짐
+  배경색은 #dfdfdf
+*/
+#menu > #menubar { 
   position: absolute;
+  background-color: #dfdfdf;
   left: 50%;
   top: 69%;
+}
 
+/*메뉴박스 안 모든 리스트에 대해 상대 위치 및 배경색 설정 */
+#menubar li {
+  position: relative;
   background-color: #dfdfdf;
-  padding: 5px 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-#menu > nav > ul > li {
-  float: left;
-  left: 50%;
-  margin: 0 15px 0 15px;
+/*메뉴박스의 1차 메뉴(MENU-1)에 대해 가로정렬시키기위해서 적용*/
+#menubar > .first-menu > li {
+  display: block;
+  float:left;
+  padding: 5px 20px;
 }
 
-#menu > nav ul ul {
+/*1차메뉴와의 배경 간격을 조정하기 위해서
+2차메뉴의 padding 좌우에 공간 추가*/
+#menubar .second-menu > li {
+  padding: 0 12px;
+}
+
+/*2차메뉴(SubMenu)에 대해 평소에는 보이지 않도록 하고 위치는 
+1차 메뉴의 바로 아래로 설정(top:100%)하고 좌측(좌표상 원점)기준으로
+시작 할 수 있도록 설정(left:0)*/
+#menubar .second-menu {
+  background-color:#dfdfdf;
   display: none;
+  position: absolute;
+  top:100%;
+  left:0;
 }
 
-#menu > nav > ul:hover ul {
+/*1차메뉴로 커서 이동시 2차메뉴가 세로정렬되면서 보이도록 설정*/
+#menubar > .first-menu:hover .second-menu {
   display: block;
 }
 
-#menu > nav > ul li:hover > a { /*menu>nav>ul>li:hover로 지정시 적용 범위가 선택된 li부터 그 이하의 ul~li까지만 선택되기 때문에 전체 메뉴를 띄우려면 ul을 선택해야함*/
+/*menu>#menubar>ul>li:hover로 지정시 적용 범위가 선택된 li부터 
+그 이하의 ul~li까지만 선택되기 때문에 
+전체 메뉴를 띄우려면 ul을 선택해야함*/
+#menubar > .first-menu li:hover > a { 
   background-color:black;
   color:white;
 }
