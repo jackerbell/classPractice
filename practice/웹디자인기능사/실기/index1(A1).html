@@ -4,62 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index1(A1).css">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/A1/style.css">
+  <link rel="stylesheet" href="./css/A1/header.css">
+  <link rel="stylesheet" href="./css/A1/slider.css">
+  <link rel="stylesheet" href="./css/A1/contents.css">
+  <link rel="stylesheet" href="./css/A1/footer.css">
 </head>
 <body>
-  <div id="main">
-    <header>
-      <div id="logo"></div>
+  <div id="wrapper">
+    <header id="header">
+      <div id="logo">
+        <a href="#">
+          <img src="./images/A1/logo.png" alt="상단로고">
+        </a>
+      </div>
       <div id="menu">
-        <nav id="menubar">
-          <ul class="first-menu">
-            <li><a href="#">MENU-1</a>
-              <ul class="second-menu">
-                <li><a href="#">SubMenu1</a></li>
-                <li><a href="#">SubMenu2</a></li>
-                <li><a href="#">SubMenu3</a></li>
-                <li><a href="#">SubMenu4</a></li>
+        <nav>
+          <ul id="gnb">
+            <li>
+              <a href="#">탑</a>
+              <ul class="lnb">
+                <li><a href="#">블라우스</a></li>
+                <li><a href="#">티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
               </ul>
             </li>
-            <li><a href="#">MENU-2</a>
-              <ul class="second-menu">
-                <li><a href="#">SubMenu1</a></li>
-                <li><a href="#">SubMenu2</a></li>
-                <li><a href="#">SubMenu3</a></li>
-                <li><a href="#">SubMenu4</a></li>
+            <li>
+              <a href="#">아우터</a>
+              <ul class="lnb">
+                <li><a href="#">자켓</a></li>
+                <li><a href="#">코트</a></li>
+                <li><a href="#">가디건</a></li>
+                <li><a href="#">머플러</a></li>
               </ul>
             </li>
-            <li><a href="#">MENU-3</a>
-              <ul class="second-menu">
-                <li><a href="#">SubMenu1</a></li>
-                <li><a href="#">SubMenu2</a></li>
-                <li><a href="#">SubMenu3</a></li>
-                <li><a href="#">SubMenu4</a></li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="lnb">
+                <li><a href="#">청바지</a></li>
+                <li><a href="#">짧은바지</a></li>
+                <li><a href="#">긴바지</a></li>
+                <li><a href="#">레깅스</a></li>
               </ul>
             </li>
-            <li><a href="#">MENU-4</a>
-              <ul class="second-menu">
-                <li><a href="#">SubMenu1</a></li>
-                <li><a href="#">SubMenu2</a></li>
-                <li><a href="#">SubMenu3</a></li>
-                <li><a href="#">SubMenu4</a></li>
+            <li>
+              <a href="#">악세서리</a>
+              <ul class="lnb">
+                <li><a href="#">귀고리</a></li>
+                <li><a href="#">목걸이</a></li>
+                <li><a href="#">반지</a></li>
+                <li><a href="#">팔찌</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div id="slide"></div>
+    <div id="slider">
+      <div id="slider-contents">
+        <img src="./images/A1/slide1.jpg" alt="slide1">
+        <img src="./images/A1/slide2.jpg" alt="slide2">
+        <img src="./images/A1/slide3.jpg" alt="slide3">
+      </div>
+    </div>
     <div id="contents">
-      <div id="notice-gallery"></div>
+      <div id="notice"></div>
       <div id="banner"></div>
       <div id="shortcut"></div>
     </div>
-    <footer>
+    <footer id="footer">
       <div id="logo"></div>
-      <div id="copyright"></div>
-      <div id="SNS"></div>
+      <div id="copy"></div>
+      <div id="sns"></div>
     </footer>
   </div>
 </body>

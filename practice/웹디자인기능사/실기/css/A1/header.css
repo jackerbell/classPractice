@@ -1,0 +1,39 @@
+#logo {
+  padding-top: 20px;
+}
+
+#gnb {
+  float: right;
+  position: relative;
+  top: 20px;
+  right:20px;
+}
+
+#gnb > li {
+  float: left;
+}
+
+#gnb >  li a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: #dfdfdf;
+  padding-top:10px;
+}
+
+#gnb .lnb {
+  display:none;
+}
+
+#gnb:hover .lnb {
+  display: block;
+}
+
+#gnb li:hover > a { 
+  background-color: black;
+  color: white;
+}
+
+
+

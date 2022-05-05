@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 
+  1. normalization 
+*/
+
+#wrapper {
+  width: 1200px;
+  height:700px;
+  background-color:black;
+}
+
+#wrapper > * {
+  width: 100%;
+}
+
+#wrapper > * > * {
+  height: 100%;
+  float: left;
+}
+
+#header {
+  height: 100px;
+  background-color:red;
+}
+
+#header > #logo {
+  width:200px;
+  background-color:navy;
+}
+
+#header > #menu {
+  width: 1000px;
+  background-color: purple;
+}
+
+#slider {
+  height:300px;
+  background-color:orangered;
+}
+
+#contents {
+  height: 200px;
+  background-color:green;
+}
+
+#contents > #notice {
+  width: 400px;
+  background-color:rebeccapurple;
+}
+
+#contents > #banner {
+  width: 400px;
+  background-color:rosybrown;
+}
+
+#contents > #shortcut {
+  width: 400px;
+  background-color:royalblue;
+}
+
+#footer {
+  height: 100px;
+  background-color:blue;
+}
+
+#footer > #logo {
+  width: 200px;
+  background-color:darkblue;
+}
+
+#footer > #copy {
+  width: 800px;
+  background-color:darkcyan;
+}
+
+#footer > #sns {
+  width: 200px;
+  background-color:darkgoldenrod;
+}
+
+/*
+  2. wrapper, header, slider, contetnts, footer 프레임 결정
+  3. 상위 프레임의 하위 항목들에 대한 프레임 결정 
+*/
