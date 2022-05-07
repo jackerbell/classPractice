@@ -1,0 +1,18 @@
+#logo > a {
+  position: relative;
+  top: 10px;
+}
+
+#copy > address {
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+#sns > * {
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-right: 5px;
+}
