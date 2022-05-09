@@ -15,15 +15,16 @@
   background-color:mediumspringgreen;
 }
 
-#tab > #tab-btn { /* tab-btn w:380px h:36px*/
-  width: 100%;
+#tab > * { /* tab-btn w:76px h:36px*/
+  float: left;
+  width: 19%;
   height:20%;
   background-color:darkgreen;
 }
 
-#tab-btn > a {  /* a w:76px h:40px*/
+#tab> * > a {  /* a w:76px h:36px*/
   display: inline-block;
-  width:20%;
+  width:100%;
   height:100%;
   background-color:darkcyan;
   text-align: center;
@@ -31,6 +32,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+
 
 #tab-contents { /* tab-contetns w:380px h:144px*/
   width: 100%;
@@ -42,10 +44,6 @@
   width: 100%;
   height: 100%;
   background-color: coral;
-}
-
-#noticept{
-  display:none;
 }
 
 #noticept a {  
@@ -61,20 +59,21 @@
 
 #notice span:first-child {
   float: left;
-  width: 80%;
+  width: 75%;
   height: 100%;
   background-color:forestgreen;
 }
 
 #notice span:last-child {
   float: left;
-  width: 20%;
+  width: 25%;
   height: 100%;
   background-color:fuchsia;
+  text-align: center;
 }
 
 #gallerypt {
-  
+  display:none;
 }
 
 #gallerypt li {
@@ -88,6 +87,25 @@
   height: 120px;
   border-radius: 10px;
 }
+
+#tab-btn2:hover ~ #tab-contents>#noticept{
+  display: none;
+}
+
+#tab-btn2:hover ~ #tab-contents>#gallerypt{
+  display: block;
+}
+
+#tab-btn1:hover ~ #tab-contents>#noticept{
+  display: block;
+}
+
+#tab-btn1:hover ~ #tab-contents>#gallerypt{
+  display: none;
+}
+
+
+
 
 
 
