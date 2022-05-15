@@ -1,0 +1,24 @@
+#logo {
+  padding-top:20px;
+  padding-left:20px;
+}
+
+#gnb {
+  float:right;
+  padding-top:60px;
+  padding-right:10px;
+}
+
+#gnb li {
+  float:left;
+  width:100px;
+  height:40px;
+  background-color: #fff;
+  border:2px solid black;
+  padding-top: 5px;
+  text-align:center;
+}
+
+.lnb {
+  display:none;
+}

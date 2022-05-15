@@ -1,16 +1,16 @@
 /* 
   범위를 벗어나 레이아웃 무너뜨리는것 방지
 */
-#slider {
-  overflow: hidden;
-}
 
 /*  
   1.이미지 3개를 담을 만큼 미리 박스크기 키우기
 */
 #slider #slider-contents {
-  width: 3600px;
-  height:300px;
+  width: 100%;
+  height:100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
 }
 
 /* 
