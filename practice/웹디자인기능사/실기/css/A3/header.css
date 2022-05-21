@@ -5,20 +5,40 @@
 
 #gnb {
   float:right;
-  padding-top:60px;
-  padding-right:10px;
+  position: relative;
+  top: 60px;
+  right:40px;
 }
 
-#gnb li {
+#gnb  li {
+  position: relative;
   float:left;
-  width:100px;
+  width:110px;
   height:40px;
   background-color: #fff;
-  border:2px solid black;
-  padding-top: 5px;
+  border:0.5px solid black;
   text-align:center;
+  z-index: 2;
+}
+
+#gnb li a {
+  display: block;
+  width: 100%;
+  height:100%;
+  padding-top:10px;
 }
 
 .lnb {
   display:none;
+}
+
+#gnb:hover .lnb {
+  position: absolute;
+  top: 100%;
+  display: block;  
+}
+
+#gnb  li:hover > a  {
+  background-color: black;
+  color:white;
 }
