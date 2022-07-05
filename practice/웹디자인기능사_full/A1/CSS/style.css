@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*bgColor:#ffffff txtColor:#222328
+*/
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap{
+  margin: 0 auto;
+  margin-top: calc((100vh - 700px)/2);
+  width:1200px;
+  height:700px;
+  background-color: black;
+}
+
+#wrap > * {
+  width: 100%;
+}
+
+#header {
+  height: 100px;
+  background-color:red;
+}
+
+#header > * {
+  height: 100%;
+}
+
+#logo {
+  float: left;
+  width: 200px;
+  background-color:orange;
+}
+
+#menu {
+  float: left;
+  width: 1000px;
+  background-color:navy;
+}
+
+#slide{
+  height: 300px;
+  background-color:blue;
+}
+
+#contents {
+  height: 200px;
+  background-color:yellow;
+}
+
+#contents > * {
+  height: 100%;
+}
+
+#notice{
+  float: left;
+  width: 33.3%;
+  background-color:purple;
+}
+
+#gallery{
+  float: left;
+  width: 33.3%;
+  background-color:crimson;
+}
+
+#shortCut{
+  float: left;  
+  width: 33.3%;
+  background-color:chocolate;
+}
+
+footer{
+  height: 100px;
+  background-color:green;
+}
+
+footer > * {
+  height: 100%;
+}
+
+#logoFooter{
+ float: left;
+ width: 200px;
+ background-color:chartreuse;
+}
+
+#Copy{
+ float: left;
+ width: 800px;
+ background-color:coral;
+}
+
+#SNS{
+ float: left;
+ width: 200px;
+ background-color:cornflowerblue;
+}
