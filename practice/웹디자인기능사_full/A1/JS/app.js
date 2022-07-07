@@ -5,8 +5,9 @@ $(document).ready(function(){
     auto: true,
     speed:400,
     pause:3000,
-    mode:'fade',
+    mode:'horizontal',
     autoHover:true,
+    pager:true
     /* 여기에다가 slideWidth:1200, slideHeight:300 을 작성해보았으나 변화가 없었음
     그래서 직접 jquery.bxslider.css 파일에서 직접 수정하기로 함 */
   })
