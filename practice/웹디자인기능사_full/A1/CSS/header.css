@@ -1,0 +1,32 @@
+#logo {
+  padding-top: calc((100px - 40px)/2);
+}
+
+#menu > #gnb {
+  float: right;
+  position: relative;
+  top:40px;
+  right:20px;
+}
+
+#gnb > li {
+  float: left;
+}
+
+#gnb a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: calc((40px - 16px)/2)
+}
+
+#gnb li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.lnb{
+  display: none;
+}

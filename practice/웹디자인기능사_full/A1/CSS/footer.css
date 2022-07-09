@@ -1,34 +1,19 @@
-@charset 'utf-8';
-
-#logo {
-  padding-top: calc((100px - 40px)/2);
+#logoFooter img {
+    margin-top: calc((100px - 40px)/2);
 }
 
-#menu > #gnb {
-  float: right;
-  position: relative;
-  top:40px;
-  right:20px;
-}
-
-#gnb > li {
-  float: left;
-}
-
-#gnb a {
-  display: block;
-  width: 100px;
-  height: 40px;
-  background-color: #fff;
+#Copy article {
   text-align: center;
-  padding-top: calc((40px - 16px)/2)
+  padding-top: calc((100px - 63.99px)/2);
 }
 
-#gnb li a:hover {
-  background-color: black;
-  color: white;
+#SNS  {
+  text-align: center;
+  padding-top: calc((200px - 132.27px)/2);  
 }
 
-.lnb{
-  display: none;
+#SNS a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
+

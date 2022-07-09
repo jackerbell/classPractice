@@ -18,64 +18,101 @@
     </head>
     <body>
         <div id="wrap">
-          <header id="header">
-            <div id="logo">
-              <img src="./IMG/logo.png" alt="메뉴상단로고">
+            <header id="header">
+              <div id="logo">
+                <img src="./IMG/logo.png" alt="메뉴상단로고">
+              </div>
+              <nav id="menu">
+                <ul id="gnb">
+                  <li><a href="#">탑</a>
+                      <ul class="lnb">
+                          <li><a href="#">블라우스</a></li>
+                          <li><a href="#">티</a></li>
+                          <li><a href="#">셔츠</a></li>
+                          <li><a href="#">니트</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">아우터</a>
+                      <ul class="lnb">
+                          <li><a href="#">자켓</a></li>
+                          <li><a href="#">코트</a></li>
+                          <li><a href="#">가디건</a></li>
+                          <li><a href="#">머플러</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">팬츠</a>
+                      <ul class="lnb">
+                          <li><a href="#">청바지</a></li>
+                          <li><a href="#">짧은바지</a></li>
+                          <li><a href="#">긴바지</a></li>
+                          <li><a href="#">레깅스</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">악세서리</a>
+                      <ul class="lnb">
+                          <li><a href="#">귀고리</a></li>
+                          <li><a href="#">목걸이</a></li>
+                          <li><a href="#">반지</a></li>
+                          <li><a href="#">팔찌</a></li>
+                      </ul>
+                  </li>
+                </ul> 
+              </nav>
+            </header>
+            <div id="slide">
+                <div id="slide_contents">
+                    <a href="#"><img src="./IMG/custom_slide.jpg" alt="백화점 탑브랜드 대전"></a>
+                    <a href="#"><img src="./IMG/slide2.jpg" alt="삼성화재 보험료"></a>
+                    <a href="#"><img src="./IMG/slide3.jpg" alt="장바구니쿠폰·보험료확인"></a>
+                </div>
             </div>
-            <nav id="menu">
-              <ul id="gnb">
-                <li><a href="#">탑</a>
-                  <ul class="lnb">
-                    <li><a href="#">블라우스</a></li>
-                    <li><a href="#">티</a></li>
-                    <li><a href="#">셔츠</a></li>
-                    <li><a href="#">니트</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">아우터</a>
-                  <ul class="lnb">
-                    <li><a href="#">자켓</a></li>
-                    <li><a href="#">코트</a></li>
-                    <li><a href="#">가디건</a></li>
-                    <li><a href="#">머플러</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">팬츠</a>
-                  <ul class="lnb">
-                    <li><a href="#">청바지</a></li>
-                    <li><a href="#">짧은바지</a></li>
-                    <li><a href="#">긴바지</a></li>
-                    <li><a href="#">레깅스</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">악세서리</a>
-                  <ul class="lnb">
-                    <li><a href="#">귀고리</a></li>
-                    <li><a href="#">목걸이</a></li>
-                    <li><a href="#">반지</a></li>
-                    <li><a href="#">팔찌</a></li>
-                  </ul>
-                </li>
-              </ul> 
-            </nav>
-          </header>
-          <div id="slide">
-            <div id="slide_contents">
-              <img src="./IMG/custom_slide.jpg" alt="백화점 탑브랜드 대전">
-              <img src="./IMG/slide2.jpg" alt="삼성화재 보험료">
-              <img src="./IMG/slide3.jpg" alt="장바구니쿠폰·보험료확인">
-            </div>
-          </div>
-          <div id="contents">
-            <div id="notice"></div>
-            <div id="gallery"></div>
-            <div id="shortCut"></div>
-          </div>
-          <footer id="footer">
-            <div id="logoFooter"></div>
-            <div id="Copy"></div>
-            <div id="SNS"></div>
-          </footer>
+            <article id="contents">
+                <div id="cont1">
+                    <div id="tab-btn">
+                        <a href="#">공지사항</a>
+                        <a href="#">갤러리</a>
+                    </div>
+                    <div id="notice">
+                        <ul>
+                            <li><a href="#">SNS 비회원 주문 종료 안내<span>2020-11-07</span></a></li>
+                            <li><a href="#">구매이용약관<span>2020-11-06</span></a></li>
+                            <li><a href="#">V센터 종료 안내<span>2018-11-07</span></a></li>
+                            <li><a href="#">개인정보 처리방침 개정 안내<span>2020-11-05</span></a></li>
+                            <li><a href="#">데이터프리 서비스 종료 안내<span>2020-11-04</span></a></li>
+                        </ul>
+                    </div>
+                    <div id="gallery">
+                        <ul>
+                            <li><a href="#"><img src="./IMG/gallery1.jpg" alt="갤러리1"><figcaption>브랜드 대전</figcaption></a></li>
+                            <li><a href="#"><img src="./IMG/gallery2.jpg" alt="갤러리2"><figcaption>삼성화재 보험료</figcaption></a></li>
+                            <li><a href="#"><img src="./IMG/gallery3.jpg" alt="갤러리3"><figcaption>장바구니</figcaption></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="banner">
+                  <a href="#"><img src="./IMG/banner_img.jpg" alt="배너"><figcaption>바로가기!</figcaption></a>
+                </div>
+                <div id="shortcut">
+                  <a href="#"><img src="./IMG/shortcut_img.jpg" alt="바로가기"><figcaption>바로가기!</figcaption></a>
+                </div>
+            </article>
+            <footer id="footer">            
+                <div id="logoFooter">
+                  <a href="#"><img src="./IMG/custom_footer_logo.jpg" alt=""></a>
+                </div>
+                <div id="Copy">
+                    <article>
+                        <p>대구광역시 중구 달구벌대로 1955 110동 2102호</p>
+                        <p>사업자: 김재환</p>
+                        <p>사업자번호:00902930193090</p>
+                    </article>
+                </div>
+                <div id="SNS">
+                    <a href="#"><img src="./IMG/SNS01.jpg" alt=""></a>
+                    <a href="#"><img src="./IMG/SNS02.jpg" alt=""></a>
+                    <a href="#"><img src="./IMG/SNS03.jpg" alt=""></a>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
