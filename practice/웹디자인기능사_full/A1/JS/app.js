@@ -11,6 +11,7 @@ $(document).ready(function(){
         /* 여기에다가 slideWidth:1200, slideHeight:300 을 작성해보았으나 변화가 없었음
         그래서 직접 jquery.bxslider.css 파일에서 직접 수정하기로 함 */
     })
+    popup()
     tab()
 })
 
@@ -44,6 +45,25 @@ function tab(){
           $('#gallery').show()
         })
 }
+
+function popup() {
+    if($.cookie('popup') == 'none') {
+        $('#popup').hide();
+    }
+
+    var $expchk = $('#expchk')
+    $('#btnX').on('click', closePop);
+
+    function closePop(){
+        if($expchk.is(':checked')) {
+            $.cookie('popup','none',{
+                expires: 7,
+                path: '/'
+            });
+        }
+        $('#popup').fadeOut('fast');
+    }
+}
 /* 
 no Jquery plugIn version (강의 자료)
 function slide(){
@@ -59,3 +79,4 @@ function slide_move(){
   }
 }
 */
+
