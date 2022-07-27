@@ -30,7 +30,7 @@ ul.bxslider {
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
-  border: 5px 2.5px solid #fff; /**/
+  border: 5px 2.5px solid #fff; /*이걸 고치니 테두리가 사라짐..*/
   background: #fff;
 }
 .bx-wrapper .bx-pager,

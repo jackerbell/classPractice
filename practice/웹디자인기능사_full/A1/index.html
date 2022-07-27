@@ -1,153 +1,200 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>JUST쇼핑물</title>
-        <link rel="stylesheet" href="./CSS/jquery.bxslider.css">
-        <link rel="stylesheet" href="./CSS/style.css">
-        <link rel="stylesheet" href="./CSS/header.css">
-        <link rel="stylesheet" href="./CSS/slide.css">
-        <link rel="stylesheet" href="./CSS/contents.css">
-        <link rel="stylesheet" href="./CSS/footer.css">
-        <link rel="stylesheet" href="./CSS/popup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JUST쇼핑물</title>
+    <link rel="stylesheet" href="./CSS/jquery.bxslider.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/slide.css" />
+    <link rel="stylesheet" href="./CSS/contents.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/popup.css" />
 
-        <script src="./JS/jquery.min.js"></script>
-        <script src="./JS/jquery.bxslider.min.js"></script>
-        <script src="./JS/jquery.cookie.js"></script>
-        <script src="./JS/app.js"></script>
-        
-    </head>
-    <body>
-        <div id="wrap">
-            <div id="popup">
-                <div id="popup_wrap">
-                    <h3 id="title">
-                        <b>SNS 비회원 주문하기 종료 안내</b>
-                    </h3>
-                    <main id="main">
-                        <p>
-                            안녕하세요, JUST 쇼핑몰 MD 홍길동입니다. 
-                            안타깝게도 SNS비회원 주문하기 서비스가 한달 뒤 종료될 예정입니다.
-                        </p><br>
-                        <p>
-                            회원가입없이 SNS계정을 이용해 그동안 제품주문을 하실수 있었는데, 
-                            금번 강화된 개인정보보호법 시행령 제 9조 (부칙 3조 3항)에 의거, 
-                            SNS를 이용한 상품 주문/결제등이 근래에 많은 보안잇슈로 문제가 되고 있음에 따라
-                            KISA의 권고조치의 일환으로 ...이러쿵 저러쿵 했습니다.
-                        </p><br>
-                        <p>
-                            따라서, 한달뒤인 2019.03.10 이후 모든 비회원 고객님들께서는 
-                            회원가입으로 전환 후 실명인증이 되어야 하며, 
-                            이는 모든 쇼핑몰/오픈마켓등의 전자상거래서비스의 
-                            공통된 사항이라는 점을 안내해드립니다.
-                        </p><br>
-                    </main>
-                    <footer id="popup_footer">
-                        <div id="sevenChk">
-                            <label for="expchk">7일동안 열지 않기</label>
-                            <input type="checkbox" id="expchk" name="expchk">
-                        </div>
-                        <div id="btnX">
-                            <img src="./IMG/popup_btn.jpg" alt="popupBtn">
-                        </div>
-                    </footer>
-                </div>
+    <script defer src="./JS/jquery.min.js"></script>
+    <script defer src="./JS/jquery.bxslider.min.js"></script>
+    <script defer src="./JS/jquery.cookie.js"></script>
+    <script defer src="./JS/app.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="popup">
+        <div id="popup_wrap">
+          <h3 id="title">
+            <b>SNS 비회원 주문하기 종료 안내</b>
+          </h3>
+          <main id="main">
+            <p>
+              안녕하세요, JUST 쇼핑몰 MD 홍길동입니다. 안타깝게도 SNS비회원
+              주문하기 서비스가 한달 뒤 종료될 예정입니다.
+            </p>
+            <br />
+            <p>
+              회원가입없이 SNS계정을 이용해 그동안 제품주문을 하실수 있었는데,
+              금번 강화된 개인정보보호법 시행령 제 9조 (부칙 3조 3항)에 의거,
+              SNS를 이용한 상품 주문/결제등이 근래에 많은 보안잇슈로 문제가 되고
+              있음에 따라 KISA의 권고조치의 일환으로 ...이러쿵 저러쿵 했습니다.
+            </p>
+            <br />
+            <p>
+              따라서, 한달뒤인 2019.03.10 이후 모든 비회원 고객님들께서는
+              회원가입으로 전환 후 실명인증이 되어야 하며, 이는 모든
+              쇼핑몰/오픈마켓등의 전자상거래서비스의 공통된 사항이라는 점을
+              안내해드립니다.
+            </p>
+            <br />
+          </main>
+          <footer id="popup_footer">
+            <div id="sevenChk">
+              <label for="expchk">7일동안 열지 않기</label>
+              <input type="checkbox" id="expchk" name="expchk" />
             </div>
-            <header id="header">
-                <div id="logo">
-                    <img src="./IMG/logo.png" alt="메뉴상단로고">
-                </div>
-                <nav id="menu">
-                    <ul id="gnb">
-                        <li><a href="#">탑</a>
-                            <ul class="lnb">
-                                <li><a href="#">블라우스</a></li>
-                                <li><a href="#">티</a></li>
-                                <li><a href="#">셔츠</a></li>
-                                <li><a href="#">니트</a></li>
-                            </ul>
-                        </li>
-                      <li><a href="#">아우터</a>
-                          <ul class="lnb">
-                              <li><a href="#">자켓</a></li>
-                              <li><a href="#">코트</a></li>
-                              <li><a href="#">가디건</a></li>
-                              <li><a href="#">머플러</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">팬츠</a>
-                          <ul class="lnb">
-                              <li><a href="#">청바지</a></li>
-                              <li><a href="#">짧은바지</a></li>
-                              <li><a href="#">긴바지</a></li>
-                              <li><a href="#">레깅스</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">악세서리</a>
-                          <ul class="lnb">
-                              <li><a href="#">귀고리</a></li>
-                              <li><a href="#">목걸이</a></li>
-                              <li><a href="#">반지</a></li>
-                              <li><a href="#">팔찌</a></li>
-                          </ul>
-                      </li>
-                    </ul> 
-                </nav>
-            </header>
-            <div id="slide">
-                <div id="slide_contents">
-                    <a href="#"><img src="./IMG/custom_slide.jpg" alt="백화점 탑브랜드 대전"></a>
-                    <a href="#"><img src="./IMG/slide2.jpg" alt="삼성화재 보험료"></a>
-                    <a href="#"><img src="./IMG/slide3.jpg" alt="장바구니쿠폰·보험료확인"></a>
-                </div>
+            <div id="btnX">
+              <img src="./IMG/popup_btn.jpg" alt="popupBtn" />
             </div>
-            <article id="contents">
-                <div id="cont1">
-                    <div id="tab-btn">
-                        <a href="#">공지사항</a>
-                        <a href="#">갤러리</a>
-                    </div>
-                    <div id="notice">
-                        <ul>
-                            <li><a href="#">SNS 비회원 주문 종료 안내<span>2020-11-07</span></a></li>
-                            <li><a href="#">구매이용약관<span>2020-11-06</span></a></li>
-                            <li><a href="#">V센터 종료 안내<span>2018-11-07</span></a></li>
-                            <li><a href="#">개인정보 처리방침 개정 안내<span>2020-11-05</span></a></li>
-                            <li><a href="#">데이터프리 서비스 종료 안내<span>2020-11-04</span></a></li>
-                        </ul>
-                    </div>
-                    <div id="gallery">
-                        <ul>
-                            <li><a href="#"><img src="./IMG/gallery1.jpg" alt="갤러리1"><figcaption>브랜드 대전</figcaption></a></li>
-                            <li><a href="#"><img src="./IMG/gallery2.jpg" alt="갤러리2"><figcaption>삼성화재 보험료</figcaption></a></li>
-                            <li><a href="#"><img src="./IMG/gallery3.jpg" alt="갤러리3"><figcaption>장바구니</figcaption></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="banner">
-                    <a href="#"><img src="./IMG/banner_img.jpg" alt="배너"><figcaption>바로가기!</figcaption></a>
-                </div>
-                <div id="shortcut">
-                  <a href="#"><img src="./IMG/shortcut_img.jpg" alt="바로가기"><figcaption>바로가기!</figcaption></a>
-                </div>
-            </article>
-            <footer id="footer">            
-                <div id="logoFooter">
-                  <a href="#"><img src="./IMG/custom_footer_logo.jpg" alt=""></a>
-                </div>
-                <div id="Copy">
-                    <article>
-                        <p>대구광역시 중구 달구벌대로 1955 110동 2102호</p>
-                        <p>사업자: 김재환</p>
-                        <p>사업자번호:00902930193090</p>
-                    </article>
-                </div>
-                <div id="SNS">
-                    <a href="#"><img src="./IMG/SNS01.jpg" alt=""></a>
-                    <a href="#"><img src="./IMG/SNS02.jpg" alt=""></a>
-                    <a href="#"><img src="./IMG/SNS03.jpg" alt=""></a>
-                </div>
-            </footer>
+          </footer>
         </div>
-    </body>
+      </div>
+      <header id="header">
+        <div id="logo">
+          <img src="./IMG/logo.png" alt="메뉴상단로고" />
+        </div>
+        <nav id="menu">
+          <ul id="gnb">
+            <li>
+              <a href="#">탑</a>
+              <ul class="lnb">
+                <li><a href="#">블라우스</a></li>
+                <li><a href="#">티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아우터</a>
+              <ul class="lnb">
+                <li><a href="#">자켓</a></li>
+                <li><a href="#">코트</a></li>
+                <li><a href="#">가디건</a></li>
+                <li><a href="#">머플러</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="lnb">
+                <li><a href="#">청바지</a></li>
+                <li><a href="#">짧은바지</a></li>
+                <li><a href="#">긴바지</a></li>
+                <li><a href="#">레깅스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">악세서리</a>
+              <ul class="lnb">
+                <li><a href="#">귀고리</a></li>
+                <li><a href="#">목걸이</a></li>
+                <li><a href="#">반지</a></li>
+                <li><a href="#">팔찌</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="slide">
+        <div id="slide_contents">
+          <a href="#">
+            <img src="./IMG/custom_slide.jpg" alt="백화점 탑브랜드 대전" />
+          </a>
+          <a href="#">
+            <img src="./IMG/slide2.jpg" alt="삼성화재 보험료" />
+          </a>
+          <a href="#">
+            <img src="./IMG/slide3.jpg" alt="장바구니쿠폰·보험료확인" />
+          </a>
+        </div>
+      </div>
+      <article id="contents">
+        <div id="cont1">
+          <div id="tab-btn">
+            <a href="#">공지사항</a>
+            <a href="#">갤러리</a>
+          </div>
+          <div id="notice">
+            <ul>
+              <li>
+                <a href="#">SNS 비회원 주문 종료 안내<span>2020-11-07</span></a>
+              </li>
+              <li>
+                <a href="#">구매이용약관<span>2020-11-06</span></a>
+              </li>
+              <li>
+                <a href="#">V센터 종료 안내<span>2018-11-07</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >개인정보 처리방침 개정 안내<span>2020-11-05</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >데이터프리 서비스 종료 안내<span>2020-11-04</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="gallery">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./IMG/gallery1.jpg" alt="갤러리1" />
+                  <figcaption>브랜드 대전</figcaption></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./IMG/gallery2.jpg" alt="갤러리2" />
+                  <figcaption>삼성화재 보험료</figcaption></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./IMG/gallery3.jpg" alt="갤러리3" />
+                  <figcaption>장바구니</figcaption></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="banner">
+          <a href="#">
+            <img src="./IMG/banner_img.jpg" alt="배너" />
+            <figcaption>바로가기!</figcaption>
+          </a>
+        </div>
+        <div id="shortcut">
+          <a href="#"
+            ><img src="./IMG/shortcut_img.jpg" alt="바로가기" />
+            <figcaption>바로가기!</figcaption></a
+          >
+        </div>
+      </article>
+      <footer id="footer">
+        <div id="logoFooter">
+          <a href="#"><img src="./IMG/custom_footer_logo.jpg" alt="" /></a>
+        </div>
+        <div id="Copy">
+          <article>
+            <p>대구광역시 중구 달구벌대로 1955 110동 2102호</p>
+            <p>사업자: 김재환</p>
+            <p>사업자번호:00902930193090</p>
+          </article>
+        </div>
+        <div id="SNS">
+          <a href="#"><img src="./IMG/SNS01.jpg" alt="" /></a>
+          <a href="#"><img src="./IMG/SNS02.jpg" alt="" /></a>
+          <a href="#"><img src="./IMG/SNS03.jpg" alt="" /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
