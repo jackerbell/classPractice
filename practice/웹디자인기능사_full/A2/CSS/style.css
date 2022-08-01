@@ -36,98 +36,6 @@ body{
 }
 
 
-/* header area */
-#header {
-  height: 100px;
-  background-color: red;
-  display: flex;
-}
-
-#logo {
-  background-color: rgb(211, 109, 109);
-  width: 200px;
-}
-
-#logo img{
-  width: 100%;
-  height: 100%;
-}
-
-#menu {
-  background-color: rgb(155, 28, 28);
-  width: 1000px;
-}
-
-#gnb {
-  width: 400px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
-  position: relative;
-  float: right;
-  margin-top: 60px;
-  margin-right: 40px;
-  line-height: 2.5; /* font크기는 16px 박스높이는 40px이므로 2.5배를 하면 세로 가운데 정렬 가능*/
-}
-
-#gnb a {
-  display: inline-block;
-  background-color: white;
-  width: 100px;
-  height: 40px;
-}
-
-#gnb:hover .lnb {
-  display: block;
-}
-
-#gnb > li:hover > a {
-  background-color:black;
-  color: white;
-}
-
-.lnb {
-  display: none;
-}
-
-#gnb .lnb  li:hover  a { /*앞에 gnb 있고 없고 차이??*/
-  background-color: black;
-  color: white;
-}
-
-/* header area */
-
-
-/* slide area */
-#slide {
-  height: 300px;
-  background-color: blue;
-}
-/* slide area */
-
-
-/* contents area */
-#contents {
-  height: 200px;
-  background-color: green;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#notice{
-  background-color: rgb(66, 146, 66)
-}
-
-#gallery{
-  background-color: rgb(3, 42, 3)
-}
-
-#banner{
-  background-color: rgb(126, 157, 126)
-}
-/* contents area */
-
-
 /* footer area */
 #footer {
   height: 100px;
@@ -137,14 +45,14 @@ body{
 }
 
 #logoFter{
-  background-color: rgb(212, 215, 18)
+  background-color: rgb(212, 215, 18);
 }
 
 #copy{
-  background-color: rgb(189, 186, 113)
+  background-color: rgb(189, 186, 113);
 }
 
 #family{
-  background-color: rgb(79, 87, 8)
+  background-color: rgb(79, 87, 8);
 }
 /* footer area */

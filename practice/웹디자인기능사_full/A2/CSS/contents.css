@@ -1,0 +1,61 @@
+#contents {
+  height: 200px;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#notice{
+  background-color: rgb(66, 146, 66);
+}
+
+#tab {
+  background-color:rgb(108, 148, 108);
+  height: 40px;
+  display: flex;
+}
+
+#tab > * > * { /* tab > tab1,2 > a */
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  line-height:2.5;
+  display: inline-block;
+}
+
+#tab1 > a {
+  background-color:rgb(114, 91, 32);
+}
+
+#tab2 > a {
+  background-color:rgb(158, 139, 89);
+}
+
+#content{
+  background-color:rgb(9, 59, 9);
+  height: 160px;
+}
+
+#gallery{
+  background-color: rgb(3, 42, 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 100px;
+  height: 100px;
+  margin:0 10px;
+}
+
+#banner{
+  background-color: rgb(126, 157, 126);
+  text-align: center;
+}
+
+#banner img{
+  width: 300px;
+  height: 150px;
+  margin-top: 25px;
+}

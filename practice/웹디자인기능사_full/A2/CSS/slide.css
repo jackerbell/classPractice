@@ -1,0 +1,10 @@
+#slide {
+  height: 300px;  
+  background-color: blue;
+  overflow: hidden;
+}
+
+#slide img {
+  width: 100%;
+  height: 300px;
+}
